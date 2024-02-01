@@ -4,7 +4,7 @@ A Small productivity react typeScript app That is designed to help enhance produ
 
 ## DEMO(Pending...)
 Visit the live demo of typescript-tasklist at:
-[typescript-tasklist](typescript-tasklist)
+[typescript-tasklist](https://typescript-tasklist.vercel.app/)
 
 
 ## Features
