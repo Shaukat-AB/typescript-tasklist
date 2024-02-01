@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        font-family: montserrat, Inter, sans-serif;
+        /* Common theme vars */
+        --primary: theme(colors.sky.600);
+        --primary-dark: theme(colors.sky.700);
+        --primary-text: theme(colors.white);
+        --success: theme(colors.green.500);
+        --success-dark: theme(colors.green.700);
+        --gray: theme(colors.slate.500);
+        --text: theme(colors.slate.900);
+        --text-dark: theme(colors.slate.100);
+        --section: theme(colors.white);
+        --section-dark: theme(colors.black);
+        --body-dark: theme(colors.slate.900);
+    }
+}
+
+@layer utilities {
+    .light {
+        --body: theme(colors.slate.100);
+        --gfrom: theme(colors.slate.200);
+    }
+
+    .gotham {
+        --body: theme(colors.black);
+        --gfrom: theme(colors.slate.700);
+    }
+
+    .midnight {
+        --body: theme(colors.slate.900);
+        --gfrom: theme(colors.blue.700);
+    }
+
+    .witch {
+        --body: theme(colors.slate.900);
+        --gfrom: theme(colors.slate.900);
+    }
+
+    .sand {
+        --body: theme(colors.orange.900);
+        --gfrom: theme(colors.orange.900);
+    }
+
+    .flame {
+        --body: theme(colors.sky.900);
+        --gfrom: theme(colors.amber.200);
+    }
+
+    .rocket {
+        --body: theme(colors.rose.900);
+        --gfrom: theme(colors.amber.700);
+    }
+}
