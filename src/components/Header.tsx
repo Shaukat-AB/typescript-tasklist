@@ -25,6 +25,7 @@ export const Header: FC<HeaderProps> = ({ themeState }) => {
                     width={42}
                     src={Logo}
                     alt="tasklist logo"
+                    loading="lazy"
                 />
                 <span className="text-2xl font-medium">Tasklist</span>
             </div>
