@@ -6,12 +6,12 @@
     :root {
         font-family: montserrat, Inter, sans-serif;
         /* Common theme vars */
-        --primary: theme(colors.sky.600);
-        --primary-dark: theme(colors.sky.700);
+        --primary: theme(colors.sky.700);
+        --primary-dark: theme(colors.sky.900);
         --primary-text: theme(colors.white);
-        --success: theme(colors.green.500);
-        --success-dark: theme(colors.green.700);
-        --gray: theme(colors.slate.500);
+        --success: theme(colors.emerald.700);
+        --success-dark: theme(colors.emerald.900);
+        --gray: theme(colors.gray.600);
         --text: theme(colors.slate.900);
         --text-dark: theme(colors.slate.100);
         --section: theme(colors.white);
