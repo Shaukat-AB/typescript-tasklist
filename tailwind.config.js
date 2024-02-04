@@ -10,7 +10,7 @@ export default {
         body:'var(--body)',
         gfrom:'var(--gfrom)',
         section:'var(--section)',
-        gray:'var(--gray)',
+        "gray-150":'var(--gray)',
         "primary-dark" : 'var(--primary-dark)',
         "primary-text": 'var(--primary-text)',
         "success-dark" : 'var(--success-dark)',
