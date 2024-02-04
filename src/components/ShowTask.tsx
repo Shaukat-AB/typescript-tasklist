@@ -63,8 +63,8 @@ const TaskItem: FC<TaskItemPorps> = ({ task, actions }) => {
 
     return (
         <li className="p-3 w-full md:max-w-[350px] flex justify-end gap-2 shadow-md rounded-md border-l-4 border-l-primary-dark transition-colors duration-300 hover:bg-slate-100 animate-pulse-fin">
-            <p className="flex-1 flex flex-col gap-2 ">
-                <span className="text-lg font-semibold"> {title} </span>
+            <p className="flex-1 flex flex-col gap-2 truncate">
+                <span className="text-lg font-semibold "> {title} </span>
                 <span className="text-gray text-sm"> {createdAt}</span>
             </p>
             <button
