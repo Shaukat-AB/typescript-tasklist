@@ -7,10 +7,10 @@
         font-family: montserrat, Inter, sans-serif;
         /* Common theme vars */
         --primary: theme(colors.sky.700);
-        --primary-dark: theme(colors.sky.900);
+        --primary-dark: theme(colors.sky.800);
         --primary-text: theme(colors.white);
-        --success: theme(colors.emerald.700);
-        --success-dark: theme(colors.emerald.900);
+        --success: theme(colors.green.700);
+        --success-dark: theme(colors.green.800);
         --gray: theme(colors.gray.600);
         --text: theme(colors.slate.900);
         --text-dark: theme(colors.slate.100);

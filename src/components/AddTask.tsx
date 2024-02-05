@@ -47,7 +47,7 @@ export const AddTask: FC<AddTaskProps> = ({ onAddTask, taskEdited }) => {
                 onSubmit={(e) => handleSubmit(e)}
             >
                 <input
-                    className="p-2 flex-1 border border-slate-200 rounded-md"
+                    className="p-2 flex-1 border border-slate-300 rounded-md outline-none focus:ring-1 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                     type="text"
                     name="task"
                     maxLength={25}
