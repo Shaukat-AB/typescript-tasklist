@@ -27,7 +27,7 @@ export const ShowTask: FC<ShowTaskProps> = ({ taskState, onEditTask }) => {
     };
 
     return (
-        <section className="bg-section p-4 shadow-md rounded-md">
+        <section className="bg-section p-4 shadow-md rounded-md dark:bg-section-dark">
             <div className="flex justify-between mb-5 ">
                 <div className="flex items-center justify-center gap-2">
                     <span className="text-xl font-medium">Todo</span>
@@ -62,7 +62,7 @@ const TaskItem: FC<TaskItemPorps> = ({ task, actions }) => {
     const [onDelete, onEdit] = actions;
 
     return (
-        <li className="p-3 w-full md:max-w-[350px] flex flex-wrap justify-end gap-4 shadow-md rounded-md border-l-4 border-l-primary-dark transition-colors duration-300 hover:bg-slate-100 animate-pulse-fin">
+        <li className="p-3 w-full md:max-w-[350px] flex flex-wrap justify-end gap-4 shadow-md rounded-md border-l-4 border-l-primary-dark transition-colors duration-300 hover:bg-slate-100 animate-pulse-fin dark:hover:bg-slate-900">
             <p className="flex-1 flex flex-col gap-2 truncate min-w-[160px]">
                 <span className="text-lg font-semibold "> {title} </span>
                 <span className="text-gray-150 text-sm"> {createdAt}</span>

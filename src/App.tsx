@@ -54,7 +54,7 @@ function App() {
     return (
         <div
             className={
-                "bg-body from-gfrom min-h-screen py-3 transition-colors duration-300 " +
+                "bg-body from-gfrom min-h-screen py-3 transition-colors duration-300 dark:text-gray-100 " +
                 themeList[theme]
             }
         >

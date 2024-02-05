@@ -18,7 +18,7 @@ export const Header: FC<HeaderProps> = ({ themeState }) => {
     };
 
     return (
-        <header className="bg-section flex shadow-md p-4 justify-between items-center rounded-md mb-10 ">
+        <header className="bg-section flex shadow-md p-4 justify-between items-center rounded-md mb-10 dark:bg-section-dark">
             <div className="flex gap-3">
                 <img
                     className="inline-block"

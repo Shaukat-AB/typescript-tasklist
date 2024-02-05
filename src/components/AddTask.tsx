@@ -41,7 +41,7 @@ export const AddTask: FC<AddTaskProps> = ({ onAddTask, taskEdited }) => {
     }, [taskEdited]);
 
     return (
-        <section className="bg-section p-3 shadow-md mx-auto w-full max-w-md rounded-md mb-5">
+        <section className="bg-section p-3 shadow-md mx-auto w-full max-w-md rounded-md mb-5 dark:bg-section-dark">
             <form
                 className="flex flex-wrap justify-center gap-3"
                 onSubmit={(e) => handleSubmit(e)}

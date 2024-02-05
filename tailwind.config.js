@@ -14,6 +14,7 @@ export default {
         "primary-dark" : 'var(--primary-dark)',
         "primary-text": 'var(--primary-text)',
         "success-dark" : 'var(--success-dark)',
+        "section-dark" : 'var(--section-dark)',
       },
       animation: {
         'pulse-fin': 'pulse 0.5s linear',
