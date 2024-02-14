@@ -30,7 +30,7 @@ export const Header: FC<HeaderProps> = ({ themeState }) => {
                 <span className="text-2xl font-medium">Tasklist</span>
             </div>
             <div
-                className="relative shadow-inner p-1"
+                className="relative shadow-inner p-1 focus:"
                 onMouseEnter={() => SetFlyOutOpen(() => true)}
                 onMouseLeave={() => SetFlyOutOpen(() => false)}
             >
@@ -82,14 +82,12 @@ const ThemeRect: FC<ThemeRectProps> = ({ theme = "light", changeTheme }) => {
         changeTheme(theme);
     };
 
-    const style = `${themeList[theme]} bg-body from-gfrom inline-block w-16 h-6 rounded-sm shadow-md cursor-pointer -skew-x-6 transition-all hover:scale-110`;
-
     return (
-        <span
-            className={style}
+        <button
+            className={`${themeList[theme]} outline-none focus:ring-4 focus:ring-sky-400 bg-body from-gfrom inline-block w-16 h-6 rounded-sm shadow-md cursor-pointer -skew-x-6 transition-all hover:scale-110 active:scale-105`}
             role="button"
             aria-label={`set ${theme} theme`}
             onClick={() => onChangeTheme()}
-        ></span>
+        ></button>
     );
 };
