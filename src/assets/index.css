@@ -15,7 +15,7 @@
         --text: theme(colors.slate.900);
         --text-dark: theme(colors.slate.100);
         --section: theme(colors.white);
-        --section-dark: theme(colors.black);
+        --section-dark: theme(colors.gray.900);
         --body-dark: theme(colors.slate.900);
     }
 }
