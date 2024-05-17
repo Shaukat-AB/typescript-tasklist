@@ -12,11 +12,11 @@ export const themeList: Obj = {
 };
 
 interface ThemeWrapperProps {
-    theme: keyof Obj,
-    children: ReactNode,
+    theme: keyof Obj;
+    children: ReactNode;
 }
 
-export const ThemeWrapper: FC<ThemeWrapperProps> = ({theme, children}) => {
+export const ThemeWrapper: FC<ThemeWrapperProps> = ({ theme, children }) => {
     return (
         <div
             className={
