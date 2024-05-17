@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import Logo from "../assets/tasklist-logo.png";
-import { themeList } from "../App";
+import { themeList } from "./ThemeWrapper";
 
 interface HeaderProps {
     themeState: [string, Function];

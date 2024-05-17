@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Obj } from ".";
 
 interface ButtonProps {
     variant?: string;
@@ -13,8 +14,6 @@ export const Button: FC<ButtonProps> = ({
     onClick = null,
     children,
 }) => {
-    type Obj = { [key: string]: string }; // object index signature to avoid getting type error
-
     const variants: Obj = {
         primary:
             "bg-primary text-primary-text hover:bg-primary-dark focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-primary dark:focus:ring-bg-primary-dark",

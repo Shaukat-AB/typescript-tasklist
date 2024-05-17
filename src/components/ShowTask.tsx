@@ -1,6 +1,5 @@
 import { FC } from "react";
-import { Task } from "./AddTask";
-import { Button } from "./Button";
+import { Task, Button } from ".";
 import { HiTrash, HiPencilSquare } from "react-icons/hi2";
 
 interface ShowTaskProps {
@@ -15,7 +14,7 @@ export const ShowTask: FC<ShowTaskProps> = ({ taskState, onEditTask }) => {
 
     const onDelete = (id: string) => {
         const newTasks = tasks.filter((task: Task) => task.id !== id);
-        setTasks(() => newTasks);
+        setTasks(newTasks);
     };
 
     const onEdit = (id: string) => {
@@ -23,7 +22,7 @@ export const ShowTask: FC<ShowTaskProps> = ({ taskState, onEditTask }) => {
     };
 
     const onClearAll = () => {
-        setTasks(() => []);
+        setTasks([]);
     };
 
     return (
@@ -69,7 +68,7 @@ const TaskItem: FC<TaskItemPorps> = ({ task, actions }) => {
             </p>
             <button
                 className=""
-                onClick={() => onEdit(id)}
+                onClick={() => onEdit(task)}
                 aria-label="edit task"
             >
                 <HiPencilSquare className="text-primary text-2xl" />
