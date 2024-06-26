@@ -12,14 +12,14 @@ function App() {
     const [theme, setTheme] = useState<string>(initialTheme);
 
     const onAddTask = (task: Task) => {
-        const newTasks = [...tasks];
+        const newTasks = [...tasks, task];
         // run when task is updated and is not added.
         if (taskEdited) {
-            // remove outdated task
-            newTasks.splice( tasks.indexOf(taskEdited), 1);
+            newTasks.pop() // undo adding task since task already exists 
+            newTasks[tasks.indexOf(taskEdited)] = task; // add updated task at existing index of task
             setTaskEdited(null);
         }
-        setTasks([...newTasks, task]);
+        setTasks(newTasks);
     };
 
     const onEditTask = (task: Task) => {
